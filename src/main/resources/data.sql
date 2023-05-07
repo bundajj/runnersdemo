@@ -1,4 +1,1 @@
-insert into RUNNER_ENTITY(AVERAGE_PACE,RUNNER_NAME) values(20,'SAnyi');
-insert into RUNNER_ENTITY(AVERAGE_PACE,RUNNER_NAME) values(40,'V');
-insert into RUNNER_ENTITY(AVERAGE_PACE,RUNNER_NAME) values(50,'C');
-insert into RUNNER_ENTITY(AVERAGE_PACE,RUNNER_NAME) values(60,'D');
+insert into runner_entity(average_pace,runner_name) values (10,'Sanyi');
