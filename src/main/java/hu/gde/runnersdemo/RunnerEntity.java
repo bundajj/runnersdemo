@@ -7,7 +7,7 @@ import java.util.List;
 @Entity
 public class RunnerEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long runnerId;
     private String runnerName;
     private long averagePace;
