@@ -58,6 +58,31 @@ public class RunnerController {
         } else {
             return -1.0;
         }
+
+
+
+
+        }
+
+    @GetMapping("/runner/{id}/maximum")
+    public double getMaxlaptime(@PathVariable Long id){
+
+        RunnerEntity runner = runnerRepository.findById(id).orElse(null);
+        if (runner != null) {
+            List<LapTimeEntity> laptimes = runner.getLaptimes();
+            int maxLaptime = 0;
+            for (LapTimeEntity laptime : laptimes) {
+                if(laptime.getTimeSeconds()>maxLaptime){
+
+                    maxLaptime=laptime.getTimeSeconds();
+                }
+            }
+
+            return maxLaptime;
+        } else {
+            return -1.0;
+        }
+
     }
 
 
